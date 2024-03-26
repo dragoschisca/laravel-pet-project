@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+header{
+    margin: 0 auto;
+    width: 100%;
+    height: 40px;
+    background-color: #c7c7c7;}
+
+.nav__list{
+    display: flex;
+    width: 50%;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+li{
+    margin-top: 20px;
+}
+
+.nav__list a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Buttons */
+.buttons{
+    margin: 5% auto;
+    width: 50%;
+    
+    display: flex;
+    column-gap: 2%;
+    justify-content: space-between;
+}
+
+.buttons button{
+    padding: 8px;
+    letter-spacing: 1px;
+    background-color: rgb(210, 210, 210);
+    border-radius: 4px;
+
+    border: 1px solid;
+}
+
+.card button{
+    padding: 6px;
+    background-color: rgb(210, 210, 210);
+    border-radius: 10px;
+    width: 40%;
+}
+
+/*Cards*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+}
+
+.card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: inherit; /* Match border-radius of parent */
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain; 
+    margin-bottom: 10px;
+}
+
+.card form {
+    margin-top: 10px;
+}
+
+
+span{
+    display: none !important;
+}
+
+
